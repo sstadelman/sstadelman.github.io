@@ -16,8 +16,8 @@
 # theme: jekyll-theme-so-simple
 remote_theme: mmistakes/so-simple-theme
 locale: en-US
-title: "My Awesome Site"
-description: "It really is the best."
+title: "Working Copy"
+description: "I propose we leave it up to the machines and go play outside"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: "https://sstadelman.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 logo: # path of site logo, e.g. "/images/logo.png"
@@ -34,7 +34,7 @@ google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
 disqus:
   shortname: # Disqus shortname, e.g. "my_disqus_shortname"
 twitter:
-  username: # site's Twitter username, e.g. "mmistakes"
+  username: sstadelman# site's Twitter username, e.g. "mmistakes"
 
 # Liquid
 liquid:
@@ -86,14 +86,14 @@ defaults:
       share: true
 
 # Site Author
-author:
-  name:
+author: 
+  name: Stan Stadelman
   picture:
-  email:
-  twitter:
+  email:  
+  twitter: sstadelman
   links:
     - title:
-      url:
+      url: "www.linkedin.com/in/stanstadelman"
       icon:
 
 # Footer Links
