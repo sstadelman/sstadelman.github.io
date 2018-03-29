@@ -1,48 +1,103 @@
-# Permalinks
-permalink:	/blog/:title
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
-# Setup
-title:		I propose we leave math to the machines and go play outside
-tagline:	'blog'
-description:	'My personal blog.'
-url:		http://sstadelman.github.io
-commentsystem:	google
-disqus:		example
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+#theme: jekyll-theme-so-simple
+remote_theme: mmistakes/so-simple-theme
+locale: en-US
+title: "I propose we leave math to the machines and go play outside"
+#description: "I propose we leave math to the machines and go play outside."
+baseurl: # the subpath of your site, e.g. "/blog"
+url: "http://sstadelman.github.io"
+logo: # path of site logo, e.g. "/images/logo.png"
+date_format: "%B %-d, %Y"
+read_time: # reading time estimates, e.g. true
+words_per_minute: # 200
+mathjax: # MathJax equations, e.g. true
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+google_analytics: # Google Analytics id, e.g. "UA-NNNNNNNN-N"
+disqus:
+  shortname: # Disqus shortname, e.g. "my_disqus_shortname"
+twitter:
+  username: "sstadelman"
 
+# Liquid
+liquid:
+  error_mode: strict
+
+# Build settings
+permalink: /:categories/:title/
+markdown: kramdown
+feed:
+  path: atom.xml
+
+# Pagination - https://jekyllrb.com/docs/pagination/
+# paginate: 10
+# paginate_path: /page:num/
+
+# Search
+search_full_content: false # can have performance implications for large sites
+
+# Taxonomy pages
+# category_archive_path: "/categories/#"
+# tag_archive_path: "/tags/#"
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+# Front Matter Defaults
+defaults:
+  # Posts defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
+
+# Site Author
 author:
-  name:		'Stan Stadelman'
-  url:		www.linkedin.com/in/stanstadelman
+  name:		"Stan Stadelman"
+  picture:
+  email:
+  twitter:
+  links:
+    - title:
+      url: 		"www.linkedin.com/in/stanstadelman"
+      icon:
 
-paginate:	5
-
-# Custom vars
-icon:		/assets/images/icon.png
-cover:		/media/cover-images/goggles-demo-one.jpg
-
-social:
-  - icon:	twitter
-    url:	https://twitter.com/sstadelman
-    desc:	Follow me on twitter
-
-  - icon:	github
-    url:	https://github.com/sstadelman
-    desc:	Fork me on github
-
-    
-menu:
-  - title:	Home
-    url:	/
-    
-  - title:	About
-    url:	/about
-    
-copyright:
-  author:	Stan Stadelman
-  url:		http://sstadelman.github.io
-  type_title:	Some rights reserved
-  type_url:	http://creativecommons.org/licenses/by/4.0/
-
-# Google Analytics (add the UA Code, e.g.: UA-xxxxxxxx-1)
-google_analytics:
-
-remote_theme: "mmistakes/so-simple-theme"
+# Footer Links
+footer_links:
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
