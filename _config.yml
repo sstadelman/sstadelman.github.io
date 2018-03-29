@@ -1,0 +1,48 @@
+# Permalinks
+permalink:	/blog/:title
+
+# Setup
+title:		I propose we leave math to the machines and go play outside
+tagline:	'blog'
+description:	'My personal blog.'
+url:		http://sstadelman.github.io
+commentsystem:	google
+disqus:		example
+
+author:
+  name:		'Stan Stadelman'
+  url:		www.linkedin.com/in/stanstadelman
+
+paginate:	5
+
+# Custom vars
+icon:		/assets/images/icon.png
+cover:		/media/cover-images/goggles-demo-one.jpg
+
+social:
+  - icon:	twitter
+    url:	https://twitter.com/sstadelman
+    desc:	Follow me on twitter
+
+  - icon:	github
+    url:	https://github.com/sstadelman
+    desc:	Fork me on github
+
+    
+menu:
+  - title:	Home
+    url:	/
+    
+  - title:	About
+    url:	/about
+    
+copyright:
+  author:	Stan Stadelman
+  url:		http://sstadelman.github.io
+  type_title:	Some rights reserved
+  type_url:	http://creativecommons.org/licenses/by/4.0/
+
+# Google Analytics (add the UA Code, e.g.: UA-xxxxxxxx-1)
+google_analytics:
+
+remote_theme: "mmistakes/so-simple-theme"
